@@ -3,6 +3,7 @@
 @import "abstracts/variables";
 
 @import "base/base";
+@import "base/global";
 @import "base/animations";
 @import "base/typhography";
 @import "base/utilities";
@@ -21,7 +22,7 @@
 // @import "layout/header";
 // @import "layout/footer";
 
-@import "pages/home";
+@import "pages/nav";
 
 
 

@@ -1,0 +1,88 @@
+.nav {
+  background: $color-white;
+  padding: 0 2rem;
+  height: 0;
+  min-height: 10vh;
+  overflow: hidden;
+
+  &__menu {
+    justify-content: space-between;
+
+    @include respond(phone) {
+      flex-direction: column;
+    }
+  }
+
+  &__brand {
+    a {
+      font-size:  $title-font-size;
+      padding: 0.8rem 0;
+      display: block;
+      color: $color-text-gray;
+    }
+  }
+
+  &__toggle-collapse {
+    position: absolute;
+    top: 0%;
+    width: 90%;
+    cursor: pointer;
+    display: none;
+
+    @include respond(phone) {
+      display: initial;
+    }
+  }
+
+  &__toggle-icons {
+    display: flex;
+    justify-content: flex-end;
+    padding: 2rem 0;
+
+    i {
+      font-size: 2.5rem;
+      color: $color-text-gray;
+    }
+  }
+
+  &__items {
+    display: flex;
+    margin: 0;
+
+    &-link {
+      padding: 1.8rem 1rem;
+      font-size: $default-font-size;
+      position: relative;
+      
+      a {
+        color: $color-text-gray;
+      }
+
+      &:hover {
+        background-color: $color-midnight;
+
+        a {
+          color: $color-white;
+        }
+      }
+    }
+
+    @include respond(phone) {
+      flex-direction: column;
+    }
+  } 
+
+  &__social {
+    padding: 1.8rem 0;
+    font-size: $default-font-size;
+    
+    i {
+      padding: 0.6rem;
+      color: $color-text-gray;
+
+      &:hover {
+        color: #a1c4cf;
+      }
+    }
+  }
+}
